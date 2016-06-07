@@ -1,0 +1,48 @@
+{
+    "name": "sails-hook-validate",
+    "version": "1.0.0",
+    "description": "实体验证",
+    "main": "index.js",
+    "sails": {
+        "isHook": true
+    },
+    "scripts": {
+        "pretest": "npm link && npm link sails-hook-validate",
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/libinqi/sails-hook-validate.git"
+    },
+    "keywords": [
+        "sails",
+        "sails-hook",
+        "model",
+        "validator",
+        "validate",
+        "define",
+        "database",
+        "exceptions",
+        "constraints",
+        "hook",
+        "plugin",
+        "error",
+        "module"
+    ],
+    "author": {
+        "name": "libinqi",
+        "email": "libinqi@outlook.com",
+        "url": "https://github.com/libinqi"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/libinqi/sails-hook-validate/issues"
+    },
+    "homepage": "https://github.com/libinqi/sails-hook-validate",
+    "devDependencies": {
+        "sails": "^0.12.3",
+        "sails-disk": "^0.10.9"
+    },
+    "dependencies": {
+        "waterline": "^0.11.2"
+    }
+}
