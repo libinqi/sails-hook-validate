@@ -10,6 +10,7 @@ var validateCustom = require(path.join(libPath, 'validateCustom'));
 var create = require(path.join(libPath, 'create'));
 var createEach = require(path.join(libPath, 'createEach'));
 var find = require(path.join(libPath, 'find'));
+var findOne = require(path.join(libPath, 'findOne'));
 var findOrCreate = require(path.join(libPath, 'findOrCreate'));
 var findOrCreateEach = require(path.join(libPath, 'findOrCreateEach'));
 var update = require(path.join(libPath, 'update'));
@@ -52,12 +53,15 @@ module.exports = function (sails) {
                    //patch sails `find()` method
                     find(model, validateCustom);
 
+                    //patch sails `findOne()` method
+                    findOne(model, validateCustom);
+
                     //patch sails `findOrCreate()` method
                     findOrCreate(model, validateCustom);
 
                     //patch sails `findOrCreateEach()` method
                     findOrCreateEach(model, validateCustom);
-                    
+
                     //patch sails `update()` method
                     update(model, validateCustom);
 
